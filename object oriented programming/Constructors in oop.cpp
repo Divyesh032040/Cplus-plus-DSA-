@@ -29,5 +29,12 @@ cout<< "health and level of trevor is : "<< trevor.health <<"and"<< trevor.level
 
 hero Micheal ;    //its call default constructor which not carry any constructor 
 
+//copy Constructor 
+
+hero Franklin (trevor);
+
+cout<< "health of Franklin is : "<<Franklin.health<<" and "<<Franklin.level<<endl;
+
+ 
 return 0;
 }
