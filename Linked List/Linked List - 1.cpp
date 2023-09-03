@@ -1,8 +1,6 @@
 #include <iostream> 
 using namespace std;
 
-//our node id user defined 
-
 class node{
 
 public:   
@@ -13,6 +11,7 @@ node(int val){
     data = val;
     next = NULL;
 }
+
 };
 
 // insert node at head 
@@ -35,6 +34,7 @@ if(head==NULL){
 }
 
 node* temp = head;
+    
 while(temp->next!=NULL){
     temp = temp -> next;
 }
@@ -57,6 +57,7 @@ void display(node* head){
 bool search (node* head , int key ){
 
     node* temp = head;
+    
     while(temp!=NULL){
         if(temp -> data == key){
             return true;
