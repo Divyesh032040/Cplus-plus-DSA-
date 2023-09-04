@@ -38,13 +38,19 @@ cout<<getSum(arr+2,3)<<endl;   //60
 
 //double pointer - pointer of pointer 
 
-int i = 10;
-    int *ptr1 = &i;  //pointer of i 
-    int **ptr2 = &ptr1;  //pointer of pointer ptr1 
-    //its called double pointer 
+ int i = 10;
+    
+    int *p1 = &i;
+     
+    int **p2 = &p1;
+      
+    int ***p3 = &p2;
+    
+cout<<"sab changa see"<<endl;
+    
+cout<<p3<<"  "<<&p2<<endl; //0x7fff34042d00  0x7fff34042d00
 
-// we can also create treepal pointer 
-    int ***ptr3 = &ptr2; //
+cout<<***p3<<endl; //10  --> //we can accsess I through Pointer of Pointer of Pointer too
     
 
 return 0;
@@ -56,3 +62,5 @@ return 0;
 // address after update p : 0x3668fffc34
 // size of arr : 8
 // sum is : 60
+//0x7fff34042d00  0x7fff34042d00
+//10
