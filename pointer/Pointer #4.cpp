@@ -36,6 +36,17 @@ cout<<getSum(arr+2,3)<<endl;   //60
 
 //her we can send only hulf arr to getSum USING arr+i , which is based on our formula arr[i]=*(arr+i)
 
+//double pointer - pointer of pointer 
+
+int i = 10;
+    int *ptr1 = &i;  //pointer of i 
+    int **ptr2 = &ptr1;  //pointer of pointer ptr1 
+    //its called double pointer 
+
+// we can also create treepal pointer 
+    int ***ptr3 = &ptr2; //
+    
+
 return 0;
 }
 
