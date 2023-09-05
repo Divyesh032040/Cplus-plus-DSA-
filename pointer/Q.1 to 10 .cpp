@@ -104,7 +104,7 @@ cout<<pp[2]<<endl;   //arr[i]=*(arr+i)
 
 //ans -> 32
 
-
+//All questions from Love Bubber DSA series part 3 of Pointer video. 
 
 return 0;
 }
