@@ -24,11 +24,20 @@ node(int data){
 // }
 
 void insertAtTail ( node* &tail , int data){
-    //creating a new node 
     node*temp = new node(data);
     tail -> next =  temp ; 
     tail = temp;
 }
+
+// void insertAtTail ( node* &tail , int data){
+//     //creating a new node 
+//     node*temp = new node(data);
+//     //now we change the "next" pointer of tail / node1 from NULL to temp node ( new node ) 
+//     tail -> next =  temp ; 
+//     //and than we changing the name "tail" from first node (node1=heaad=tail) to new connected node (temp/node2) 
+//     tail = temp;
+//     //her we connect out new temp node with node1. 
+// }
  
 void print(node* &head) {
     node* temp = head; 
