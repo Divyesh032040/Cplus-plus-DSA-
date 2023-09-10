@@ -1,6 +1,9 @@
 //write a code for circular linked list such as if a node with X data is present (element) in 
 //CLL than add new node at front of that node. it should be applicable for empty CLL too.
 
+//write a code for circular linked list such as if a node with X data is present (element) in 
+//CLL than add new node at front of that node. it should be applicable for empty CLL too.
+
 #include <iostream>
 using namespace std;
 
@@ -58,22 +61,34 @@ void print (node*tail){
     tail = tail -> next ;
 }
      while ( tail != temp);
-        
+        cout<<endl;
 }
-
 
 int main() {
 
 node*tail = NULL;
 
-//insert in empty list - element is not in list 
+    insertNode(tail, 5, 3);
+    print(tail);
 
-insertNode(tail , NULL , 10 );  //in CLL tail is empty , set node with data 10
+    insertNode(tail, 3, 5);
+    print(tail);
 
-insertNode(tail , 10 , 20 );   //in CLL if element 10 is present than add new node with data 20 
+    insertNode(tail, 5, 7);
+    print(tail);
 
-insertNode(tail , 20 , 30 );  //in CLL if element 20 is present than add new node with data 30
-print (tail);
+    insertNode(tail, 7, 9);
+    print(tail);
+
+    insertNode(tail, 5, 6);
+    print(tail);
+    
+    insertNode(tail, 9, 10);
+    print(tail);
+
+    insertNode(tail, 3, 4);
+    print(tail);
+
 
 return 0;
 }
