@@ -19,7 +19,8 @@ void insertAtTail ( node* &tail , int data){
     tail -> next =  temp ; 
     tail = temp;
 }
-
+//main function for revers linked list 
+//its contain 3 pointers and we start travers from head and changing nodes curr to prev and contain next pointrr for accsessing forther linked list
 node *reversLinkedList (node* &head){
        node*prev = NULL;
        node*curr = head;
