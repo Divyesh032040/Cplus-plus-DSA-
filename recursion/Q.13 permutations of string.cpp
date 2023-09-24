@@ -10,7 +10,7 @@ void permutation ( string s , string ans ){
         return;
     }
     for( int i=0 ; i<s.length() ; i++){
-    char ch = s[i];
+    char ch = s[i];             //time complexity is n
     string ros = s.substr(0,i)+s.substr(i+1);
     permutation ( ros , ans + ch );
     }
