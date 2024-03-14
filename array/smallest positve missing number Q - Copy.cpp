@@ -4,7 +4,7 @@
 
 // time complexity : O(n);
 
-//Code by Soham_Piprotar
+
 
 #include <iostream>
 #include <vector>
